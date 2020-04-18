@@ -1,0 +1,129 @@
+.s-intro
+  padding-top: 25px
+  margin-bottom: -111px
+
+.intro-slide
+  padding: 50px 28px
+  height: 500px
+  +bg-cover
+  border-radius: 5px
+  overflow: hidden
+  h1
+    width: 530px
+    font-size: 48px
+    line-height: 63px
+    font-family: "BebasNeueBold", sans-serif
+    font-weight: normal
+    text-transform: uppercase
+    span
+      background-color: $accent-green
+      color: #fff
+      display: inline-block
+      padding: 5px 10px 0
+      line-height: 1
+  &-link
+    width: 52px
+    height: 52px
+    display: inline-block
+    position: relative
+    .svg
+      position: absolute
+      left: calc(50% - 8.5px)
+      top: calc(50% - 7px)
+      width: 17px
+      height: auto
+      +mt(.3s)
+    &:hover
+      .svg
+        fill: $accent-green
+
+.intro-slider
+  position: relative
+  .owl-dots
+    position: absolute
+    width: 7px
+    right: 15px
+    bottom: 67px
+    button.owl-dot
+      display: block
+      width: 7px
+      height: 7px
+      background-color: #fff
+      border-radius: 50%
+      cursor: pointer
+      margin-bottom: 4px
+      +mt(.3s)
+      &.active, &:hover
+        background-color: $accent-green
+
+
+
+.intro-form
+  background-color: #fff
+  text-align: center
+  border-radius: 5px
+  padding: 17px 23px 28px
+  line-height: 1
+  margin-left: 25px
+  margin-right: 35px
+  position: relative
+  top: -111px
+  z-index: 2
+  width: calc(100% - 60px)
+  box-shadow: 0 0 25px 15px rgba(#000, .07)
+  &:before
+    content: ''
+    position: absolute
+    width: 294px
+    height: 1px
+    background-color: #d0d0d0
+    left: 24px
+    top: -24px
+  &-title
+    font-size: 21px
+    margin-bottom: 5px
+  &-subtitle
+    font-size: 27px
+    margin-bottom: 12px
+  &-body
+    padding-top: 21px
+    display: flex
+    justify-content: space-between
+    align-items: center
+  label
+    margin-bottom: 0
+    margin-left: 30px
+    position: relative
+    width: 200px
+    &:after
+      content: ''
+      position: absolute
+      width: 18px
+      height: 14px
+      background-image: url('../img/icons/arrow.svg')
+      +bg-cover
+      right: -34px
+      top: calc(50% - 7px)
+  input
+    font-size: 18px
+    padding: 12px 13px 13px
+    text-align: center
+  .btn
+    width: 266px
+    font-size: 18px
+    padding: 16px
+  .phone
+    font-size: 30px
+    font-weight: 700
+    color: #1a4e4b
+    position: relative
+    &:hover
+      color: $accent-red
+    &:after
+      content: ''
+      position: absolute
+      width: 2px
+      height: 62px
+      background-color: #c4c4c4
+      right: -22px
+      top: calc(50% - 31px)

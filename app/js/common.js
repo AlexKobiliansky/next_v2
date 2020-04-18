@@ -46,6 +46,51 @@ $(document).ready(function(){
         scrollToTopOnError: false
     });
 
+    $('.intro-slide-link')
+        .circleProgress({
+            size: 52,
+            thickness: 2,
+            value: 0.25,
+            emptyFill: "#888",
+            fill: "#6bb0a4",
+            animation: {
+                duration: 100
+            }
+        })
+        .on('mouseenter', function () {
+            var $this = $(this);
+            $this.circleProgress({
+                value: 1,
+                animationStartValue: 0.25,
+                animation: {
+                    duration: 300
+                }
+            });
+        })
+        .on('mouseleave', function () {
+            var $this = $(this);
+            $this.circleProgress({
+                value: 0.25,
+                animationStartValue: 1,
+                animation: {
+                    duration: 300
+                }
+            });
+        });
+
+    $('.intro-slider').owlCarousel({
+        loop:false,
+        nav: false,
+        items: 1,
+        margin: 15,
+        dots: true,
+        animateOut: 'fadeOut',
+        // animateIn: 'fadeIn',
+        mouseDrag: false,
+        touchDrag: false,
+        autoplay: true,
+    });
+
     //E-mail Ajax Send
     $("form").submit(function() { //Change
         var th = $(this);
