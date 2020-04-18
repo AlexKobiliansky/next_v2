@@ -24,6 +24,7 @@ body
   font-family: $default-font
   overflow-x: hidden
   color: $text
+  letter-spacing: -0.01em
   input, textarea
     border: #666 1px solid
     outline: none
@@ -50,6 +51,7 @@ a:hover, a:active, a:focus
 a
   color: $accent-green
   text-decoration: none
+  +mt(.3s)
 
 a, li, button
   outline: none!important
@@ -61,6 +63,62 @@ ul
 
 .hidden
   display: none!important
+
+
 // ======= END TEMPLATE STYLES =======
+.btn
+  display: inline-block
+  line-height: 1
+  white-space: nowrap
+  +mt(.3s)
+  border-radius: 5px
+  text-align: center
+  cursor: pointer
+  box-shadow: none
+  border: none
+  font-size: 20px
+  padding: 17px 20px
+
+.btn-red
+  color: #fff
+  background-color: $accent-red
+  &:focus, &:active
+    color: #fff
+    background-color: $accent-red
+  &:hover
+    color: #fff
+    background-color: darken($accent-red, 7%)
+  &.disabled
+    filter: grayscale(.7)
+    pointer-events: none
+
+form
+  label
+    display: block
+    margin-bottom: 22px
+    span
+      line-height: 1
+      display: inline-block
+      margin-bottom: 7px
+    &.short-label
+      width: 220px
+  input, textarea
+    width: 100%
+    line-height: 1
+    border: 1px solid #c4c4c4
+    border-radius: 5px
+    padding: 9px 11px
+    &::placeholder
+      color: rgba(#000, .6)
+    &.error
+      border-color: red!important
+      color: red!important
+      &::placeholder
+        color: red!important
+  .help-block
+    display: none!important
+  textarea
+    height: 70px
+    resize: none
 
 

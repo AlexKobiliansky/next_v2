@@ -1,0 +1,104 @@
+.top-line
+  display: flex
+  justify-content: space-between
+  align-items: center
+  padding: 25px 0
+
+.top-logo
+  position: relative
+  top: 5px
+  margin-left: 40px
+
+
+.top-socials, .top-messangers
+  font-size: 0
+
+.soc-item, .messanger-item
+  display: inline-block
+  margin: 0 5px
+  +mt(.3s)
+  img
+    width: 25px
+    height: auto
+  &:hover
+    filter: brightness(.84) contrast(1.4)
+
+.top-address
+  font-size: 20px
+
+.top-contacts
+  display: flex
+  text-align: right
+  align-items: flex-end
+
+.top-phones
+  a
+    display: block
+    font-size: 21px
+    font-weight: 700
+    color: #000
+    line-height: 1
+    margin-top: 5px
+    &:hover
+      color: $accent-green
+    &:first-child
+      margin-top: 0
+
+.hamburger-wrap
+  display: none
+
+.mnu-line
+  display: flex
+  justify-content: space-between
+  margin-top: 7px
+
+.main-mnu
+  font-size: 0
+  border-bottom: 2px solid #dbdbdb
+  li
+    display: inline-block
+    &:last-child
+      a
+        margin-right: 0
+  a
+    display: inline-block
+    font-size: 18px
+    color: $text
+    margin-right: 15px
+    padding-bottom: 12px
+    position: relative
+    &:after
+      content: ''
+      position: absolute
+      left: 0
+      bottom: -2px
+      width: 100%
+      height: 2px
+      background-color: $accent-green
+      +mt(.3s)
+      opacity: 0
+    &:hover
+      &:after
+        opacity: 1
+
+.btn-support
+  background-color: $accent-green
+  color: #fff
+  width: 114px
+  display: flex
+  justify-content: center
+  align-items: center
+  border-radius: 5px
+  line-height: 1
+  font-size: 18px
+  img
+    width: 24px
+    height: auto
+    margin-right: 10px
+  &:hover
+    background-color: darken($accent-green, 10%)
+    color: #fff
+  span
+    display: inline-block
+    margin-bottom: 2px
+
