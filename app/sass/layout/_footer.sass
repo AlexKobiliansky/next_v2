@@ -1,0 +1,33 @@
+.main-foot
+  background-color: #000
+  color: #fff
+  padding: 45px 0 55px
+  .hamburger
+    display: none
+  .hamburger-inner, .hamburger-inner:after, .hamburger-inner:before
+    background-color: #fff
+
+.foot-line
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+.foot-logo
+  width: 160px
+  display: inline-block
+
+.foot-mnu
+  width: calc(100% - 190px)
+  font-size: 0
+  li
+    display: inline-block
+  a
+    display: inline-block
+    font-size: 18px
+    margin-right: 40px
+    color: #fff
+    &:hover
+      color: $accent-green
+  li:last-child
+    a
+      margin-right: 0
