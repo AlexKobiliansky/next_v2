@@ -11,6 +11,25 @@
 // ≥992px
 +media-breakpoint-down(md)
 
+  .s-contacts
+    .contacts-block
+      position: relative
+      top: 0
+      left: 0
+      width: 100%
+      padding-bottom: 10px
+      .contact-items-wrap
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+      .contact-item
+        width: calc(50% - 15px)
+        margin-bottom: 15px
+        &-desc
+          font-size: 16px
+          line-height: 1.3
+  #map
+    height: 400px
 
   .s-count
     .section-title
@@ -167,6 +186,25 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .s-contacts
+    .contacts-block
+      padding-left: 15px
+      padding-right: 15px
+      .section-title
+        padding-bottom: 10px
+        margin-bottom: 25px
+      .contact-item
+        .svg
+          width: 24px
+        &-img
+          width: 35px
+        &-desc
+          width: calc(100% - 35px)
+          font-size: 13px
+
+  #map
+    height: 350px
 
   .s-count
     padding: 50px 0
@@ -404,6 +442,19 @@
       font-size: 24px
 
 @media (max-width: 390px)
+
+
+  .s-contacts
+    .contacts-block
+      .contact-item
+        width: 100%
+        &-img
+          width: 45px
+        .svg
+          width: 29px
+        &-desc
+          width: calc(100% - 45px)
+          font-size: 16px
 
   .s-count
     .section-title

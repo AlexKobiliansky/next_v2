@@ -1,0 +1,53 @@
+.s-contacts
+  position: relative
+  .container
+    position: absolute
+    top: 0
+  .col-xl-9
+    position: relative
+  .contacts-block
+    position: absolute
+    width: 460px
+    top: 75px
+    left: calc((100vw - 555px)/2)
+    z-index: 2
+
+#map
+  height: 600px
+  background-color: #e5e5e5
+
+
+.contacts-block
+  background-color: #fff
+  box-shadow: 10px 10px 25px 5px rgba(#000, .05)
+  display: inline-block
+  padding: 30px 45px 45px
+  .section-title
+    line-height: 1
+    text-align: left
+    padding-bottom: 15px
+    border-bottom: 1px solid #c4c4c4
+    margin-bottom: 32px
+
+.contact-item
+  display: flex
+  justify-content: space-between
+  align-items: center
+  margin-bottom: 22px
+  &:last-child
+    margin-bottom: 0
+  .svg
+    width: 34px
+    height: auto
+    fill: #ccc
+    position: relative
+    top: 3px
+  &-img
+    width: 52px
+  &-desc
+    width: calc(100% - 45px)
+    font-size: 18px
+  a
+    color: $text
+    &:hover
+      color: $accent-green
