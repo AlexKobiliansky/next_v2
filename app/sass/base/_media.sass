@@ -94,6 +94,14 @@
 // ≥768px
 +media-breakpoint-down(sm)
 
+  .prices-wrap
+    justify-content: center
+
+  .price-item
+    width: 80%
+    &-include
+      margin-bottom: 15px
+
   .pop-item
     width: calc(50% - 15px)
     margin-bottom: 30px
@@ -136,6 +144,16 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .s-prices
+    &:before
+      height: 240px
+
+  .price-item
+    width: 100%
+
+  .section-subtitle
+    text-align: center
 
   .s-populars
     padding-left: 10px
@@ -301,6 +319,25 @@
       font-size: 24px
 
 @media (max-width: 390px)
+
+  .price-item
+    &-title
+      font-size: 17px
+    &-desc
+      font-size: 14px
+      margin-bottom: 10px
+    &-include
+      &>div
+        font-size: 14px
+    &-price
+      font-size: 20px
+    &-btn
+      width: 160px
+      padding: 12px
+
+  .s-prices
+    padding-left: 10px
+    padding-right: 10px
 
   .pop-item
     width: 100%

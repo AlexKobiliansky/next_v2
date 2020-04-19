@@ -1,0 +1,126 @@
+.s-prices
+  padding: 30px 30px 10px
+  position: relative
+  &-content
+    position: relative
+    z-index: 2
+  &:before
+    content: ''
+    position: absolute
+    width: 100%
+    border-radius: 5px
+    +boxshadow
+    left: 0
+    top: 0
+    height: 156px
+  .section-subtitle
+    margin-bottom: 20px
+
+.prices-wrap
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+
+.price-item
+  +bg-cover
+  position: relative
+  width: calc(50% - 9px)
+  margin-bottom: 18px
+  border: 1px solid #c4c4c4
+  padding: 0 22px 19px
+  border-radius: 10px
+  overflow: hidden
+  &:after
+    content: ''
+    position: absolute
+    width: 100%
+    height: 100%
+    left: 0
+    top: 0
+    background-color: rgba(#fff, .9)
+  &-content
+    position: relative
+    z-index: 2
+  &-title
+    width: calc(100% + 44px)
+    position: relative
+    left: -22px
+    line-height: 1.2
+    padding: 18px 22px 0
+    font-weight: 700
+    font-size: 18px
+    text-transform: uppercase
+    color: $accent-green
+
+    margin-bottom: 15px
+    span
+      display: block
+      border-bottom: 1px solid #c4c4c4
+      padding-bottom: 15px
+
+  &-desc
+    padding-left: 15px
+    line-height: 1.4
+    color: rgba($text, .75)
+    margin-bottom: 22px
+  &-include
+    margin-bottom: 5px
+    &>span
+      font-size: 14px
+      display: inline-block
+      color: rgba($text, .69)
+      margin-bottom: 12px
+    &>div
+      padding: 5px 15px
+      border-radius: 10px
+      background-color: rgba(#fff, .4)
+  &-price
+    font-size: 22px
+    font-weight: 700
+    line-height: 1
+    position: relative
+    width: calc(100% + 44px)
+    left: -22px
+    padding: 15px 22px
+    margin-bottom: 15px
+  &-btn
+    display: inline-block
+    width: 182px
+    line-height: 1
+    padding: 14px
+    border-radius: 5px
+    text-align: center
+    font-size: 14px
+    color: #636363
+    border: 1px solid #888888
+    +mt(.3s)
+    &:hover
+      background-color: $accent-green
+      border-color: $accent-green
+      color: #fff
+  &.chosen
+    color: #fff
+    .price-item-title
+      background-color: $accent-green
+      color: #fff
+      span
+        border-bottom: none
+    &:after
+      background-color: rgba(#000, .9)
+    .price-item-desc
+      color: rgba(#fff, .75)
+    .price-item-include
+      &>span
+        color: rgba(#fff, .69)
+      &>div
+        background-color: rgba(#fff, .16)
+    .price-item-price
+      background-color: $accent-red
+      color: #fff
+    .price-item-btn
+      background-color: $accent-green
+      border-color: $accent-green
+      color: #fff
+      &:hover
+        background-color: darken($accent-green, 10%)
+        border-color: darken($accent-green, 10%)
