@@ -173,10 +173,23 @@ $(document).ready(function(){
         autoplay: true,
     });
 
+    $('.gallery-slider').owlCarousel({
+        loop:true,
+        nav: true,
+        margin: 15,
+        items: 1,
+        autoHeight: true,
+        dots: false,
+        autoplay: true,
+        navText: ["", ""],
+    });
+
 
     function heightses() {
         if ($(window).width()>480) {
             $('.adv-item-title').height('auto').equalHeights();
+            $('.gal-slide-title').height('auto').equalHeights();
+            $('.gal-slide-desc').height('auto').equalHeights();
         }
 
         if ($(window).width()>768) {
@@ -191,6 +204,11 @@ $(document).ready(function(){
     });
 
     heightses();
+
+    $('.gal-slide').photoswipe({
+        showAnimationDuration: 0,
+        hideAnimationDuration: 0
+    });
 
     //E-mail Ajax Send
     $("form").submit(function() { //Change

@@ -11,6 +11,9 @@
 // ≥992px
 +media-breakpoint-down(md)
 
+  .gal-slide
+    width: calc(50% - 15px)
+
   .pop-item
     height: 200px
     &-link
@@ -144,6 +147,48 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .s-gallery
+    padding-left: 10px
+    padding-right: 10px
+    .btn-wrap
+      .btn
+        font-size: 16px
+        width: auto
+
+  .gallery-slider
+    position: relative
+    width: calc(100% - 60px)
+    margin-left: 30px
+    display: block!important
+    .owl-nav
+      position: absolute
+      z-index: 2
+      top: calc(50% - 9.5px)
+      left: 0
+      width: 100%
+      button.owl-prev, button.owl-next
+        width: 19px
+        height: 19px
+        background-image: url('../img/icons/slider-arrow.svg')
+        +bg-cover
+        cursor: pointer
+        +mt(.3s)
+        opacity: .8
+        position: absolute
+        &:hover
+          opacity: 1
+      button.owl-prev
+        left: -30px
+        transform: rotate(180deg)
+      button.owl-next
+        right: -30px
+
+  .gal-slide
+    width: 100%
+
+  .gallery-wrap
+    display: none
 
   .s-prices
     &:before
@@ -319,6 +364,12 @@
       font-size: 24px
 
 @media (max-width: 390px)
+
+  .gallery-slider
+    width: 100%
+    margin-left: 0
+    .owl-nav
+      display: none
 
   .price-item
     &-title
