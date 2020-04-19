@@ -92,6 +92,16 @@ ul
     filter: grayscale(.7)
     pointer-events: none
 
+.btn-green
+  color: #ffffff
+  background-color: $accent-green
+  &:focus, &:active
+    color: #fff
+    background-color: $accent-green
+  &:hover
+    color: #fff
+    background-color: darken($accent-green, 7%)
+
 form
   label
     display: block
@@ -127,5 +137,9 @@ form
   font-weight: 700
   line-height: 1
 
+.section-subtitle
+  font-size: 18px
+  color: rgba($text, .72)
+  margin-bottom: 35px
 
 

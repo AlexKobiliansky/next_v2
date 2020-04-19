@@ -1,5 +1,71 @@
 $(document).ready(function(){
 
+    /**
+     * mobile-mnu customization
+     */
+    var mmenu = $('#mobile-mnu');
+    var menuLogo = mmenu.data("logo");
+    var $mmenu = mmenu.mmenu({
+        navbars: [{
+            content: [ "<img src=" + menuLogo + " class=\"img-responsive mm-logo\" alt=\"alt\"/>" ],
+            height: 3
+        }],
+        "pageScroll": true,
+
+        "navbar": {
+            "title" : "",
+        },
+        "extensions": [
+            "theme-dark",
+            "pagedim-black",
+            "position-front",
+            "fx-listitems-slide",
+        ],
+    }, {
+        offCanvas: {
+            pageSelector: "#page-container"
+        },
+    });
+
+    var mmenuBtn = $(".mmenu-btn");
+    var API = $mmenu.data("mmenu");
+
+    mmenuBtn.click(function() {
+        API.open();
+        $(this).addClass('is-active')
+    });
+
+
+    API.bind( "close:start", function() {
+        setTimeout(function() {
+            mmenuBtn.removeClass( "is-active" );
+        }, 300);
+    });
+    /**
+     * end mobile-mnu customization
+     */
+
+    var element = document.querySelector( '.main-mnu' );
+
+    var droppy = new Droppy( element, {
+        parentSelector: 'li',
+        dropdownSelector: 'li > ul',
+        triggerSelector: 'a'
+    } );
+
+    $('.droppy__parent').on("mouseenter", function(){
+        $(this).children('.droppy__drop ').addClass('droppy__drop--active')
+    });
+
+    $('.droppy__parent').on("mouseleave", function(){
+        $(this).children('.droppy__drop ').removeClass('droppy__drop--active')
+    });
+
+    $('.droppy__parent a').click(function(){
+        var link = $(this).attr('href');
+        window.location.href = link;
+    })
+
     $('img.svg').each(function(){
         var $img = jQuery(this);
         var imgID = $img.attr('id');
@@ -46,37 +112,53 @@ $(document).ready(function(){
         scrollToTopOnError: false
     });
 
-    $('.intro-slide-link')
-        .circleProgress({
-            size: 52,
-            thickness: 2,
-            value: 0.25,
-            emptyFill: "#888",
-            fill: "#6bb0a4",
-            animation: {
-                duration: 100
-            }
-        })
-        .on('mouseenter', function () {
-            var $this = $(this);
-            $this.circleProgress({
-                value: 1,
-                animationStartValue: 0.25,
-                animation: {
-                    duration: 300
-                }
-            });
-        })
-        .on('mouseleave', function () {
-            var $this = $(this);
-            $this.circleProgress({
+    if ($(window).width()>768) {
+        $('.intro-slide-link')
+            .circleProgress({
+                size: 52,
+                thickness: 2,
                 value: 0.25,
-                animationStartValue: 1,
+                emptyFill: "#888",
+                fill: "#6bb0a4",
                 animation: {
-                    duration: 300
+                    duration: 100
                 }
+            })
+            .on('mouseenter', function () {
+                var $this = $(this);
+                $this.circleProgress({
+                    value: 1,
+                    animationStartValue: 0.25,
+                    animation: {
+                        duration: 300
+                    }
+                });
+            })
+            .on('mouseleave', function () {
+                var $this = $(this);
+                $this.circleProgress({
+                    value: 0.25,
+                    animationStartValue: 1,
+                    animation: {
+                        duration: 300
+                    }
+                });
             });
-        });
+    } else {
+        $('.intro-slide-link')
+            .circleProgress({
+                size: 40,
+                thickness: 2,
+                value: 0.25,
+                emptyFill: "#888",
+                fill: "#6bb0a4",
+                animation: {
+                    duration: 100
+                }
+            })
+    }
+
+
 
     $('.intro-slider').owlCarousel({
         loop:false,

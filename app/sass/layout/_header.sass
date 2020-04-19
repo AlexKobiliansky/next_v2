@@ -60,6 +60,25 @@
     &:last-child
       a
         margin-right: 0
+    ul
+      position: absolute
+      z-index: 3
+      background-color: #fff
+      width: 300px
+      box-shadow: 0 10px 10px 5px rgba(#000, .1)
+      li
+        display: block
+        ul
+          left: 100%
+          top: 0
+      a
+        border: none
+        margin-right: 0
+        display: block
+        padding: 10px 15px
+        &:hover
+          color: #fff
+          background-color: $accent-green
   a
     display: inline-block
     font-size: 18px
@@ -101,4 +120,95 @@
   span
     display: inline-block
     margin-bottom: 2px
+
+.hamburger-inner, .hamburger-inner:after, .hamburger-inner:before
+  background-color: $accent-green
+
+.hamburger.is-active .hamburger-inner, .hamburger.is-active .hamburger-inner:after, .hamburger.is-active .hamburger-inner:before
+  background-color: $accent-green
+
+.hamburger-wrap
+  display: none
+
+.hamburger
+  padding: 0
+  position: relative
+  top: 5px
+
+
+//mmenu customization start
+
+.mm-menu_position-front.mm-menu_opened
+  z-index: 100
+
+.mm-menu_theme-dark
+  background-color: $accent-green
+  text-transform: uppercase
+  z-index: 4
+
+.mm-logo
+  display: block
+  margin: 0 auto
+  transform: scaleY(.51)
+  padding-left: 30px
+  padding-right: 30px
+
+.mm-navbars_top
+  border-color: transparent
+
+.mm-listitem, .mm-listitem .mm-btn_next, .mm-listitem .mm-btn_next:before, .mm-listitem:after, .mm-listview
+  border-color: rgba(#fff, .3)
+
+//#menu-glavnoe-menyu
+//  .mm-listitem
+//    &:last-child
+//      a
+//        background-color: $accent-red
+//        margin-left: 20px
+//      &:after
+//        display: none
+//    &:nth-last-child(2)
+//      &:after
+//        display: none
+
+.mm-listitem
+  a
+    padding-top: 14px
+    padding-bottom: 12px
+#menu-glavnoe-menyu, #menu-mobilnoe-menyu
+  li.mm-listitem
+    &:nth-last-child(2)
+      &:after
+        display: none
+    &:last-child
+      background-color: darken($accent-green, 10%)
+      a
+        position: relative
+        padding-left: 55px
+        font-weight: 700
+        &:before
+          content: ''
+          position: absolute
+          width: 25px
+          height: 25px
+          background-image: url('../img/icons/support-icon.png')
+          +bg-cover
+          left: 20px
+          top: 10px
+      &:after
+        display: none
+
+
+.mm-navbar
+  border: none
+
+
+.mm-menu_theme-dark .mm-navbar a, .mm-menu_theme-dark .mm-navbar>*
+  font-size: 20px
+  color: #fff
+  letter-spacing: 2px
+
+.mm-menu_theme-dark .mm-listview a:not(.mm-btn_next)
+  color: #fff
+//mmenu customization end
 

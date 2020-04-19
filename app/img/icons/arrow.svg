@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="Layer"
+   enable-background="new 0 0 64 64"
+   height="319.9957"
+   viewBox="0 0 48 39.999462"
+   width="384"
+   version="1.1"
+   sodipodi:docname="arrow.svg"
+   inkscape:version="0.92.4 (unknown)">
+  <metadata
+     id="metadata45">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs43" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="978"
+     id="namedview41"
+     showgrid="false"
+     inkscape:zoom="1.5566406"
+     inkscape:cx="192"
+     inkscape:cy="160"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="Layer" />
+  <path
+     d="m 29.379,0.55146354 c -0.799,-0.761 -2.066,-0.731 -2.827,0.069 C 25.79,1.4204635 25.822,2.6864635 26.621,3.4484635 L 41.963,17.999464 H 2 c -1.104,0 -2,0.896 -2,2 0,1.104 0.896,2 2,2 h 39.899 l -15.278,14.552 c -0.8,0.762 -0.831,2.028 -0.069,2.828 0.393,0.412 0.92,0.62 1.448,0.62 0.496,0 0.992,-0.183 1.379,-0.552 l 17.449,-16.62 c 0.756,-0.755 1.172,-1.759 1.172,-2.828 0,-1.069 -0.416,-2.073 -1.207,-2.862 z"
+     id="path38"
+     inkscape:connector-curvature="0" />
+</svg>

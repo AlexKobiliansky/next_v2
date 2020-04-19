@@ -39,6 +39,8 @@ gulp.task('styles', function() {
 gulp.task('scripts', function() {
 	return gulp.src([
 		'app/libs/jquery/dist/jquery.min.js',
+		'app/libs/droppy-menu/droppy.min.js',
+		'app/libs/mmenu/jquery.mmenu.all.js',
 		'app/libs/inputmask/jquery.maskedinput.min.js',
 		'app/libs/jquery-form-validator/form-validator/jquery.form-validator.min.js',
 		'app/libs/jquery-circle-progress/circle-progress.min.js',

@@ -1,0 +1,104 @@
+.s-populars
+  padding: 45px 30px 20px
+  position: relative
+  margin-bottom: 15px
+  &-content
+    position: relative
+    z-index: 2
+  &:before, &:after
+    content: ''
+    position: absolute
+    width: 100%
+    border-radius: 5px
+    +boxshadow
+    left: 0
+  &:before
+    height: 240px
+    top: 0
+  &:after
+    height: 162px
+    bottom: 0
+
+.populars-wrap
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  align-items: flex-start
+
+.pop-item
+  width: calc(33.33333% - 18px)
+  margin-bottom: 27px
+  height: 236px
+  +bg-cover
+  position: relative
+  border-top-left-radius: 5px
+  border-top-right-radius: 5px
+  overflow: hidden
+  &-content
+    position: absolute
+    width: 100%
+    height: 76px
+    display: flex
+    align-items: center
+    padding: 10px 20px
+    background-color: rgba(#000, .75)
+    color: #fff
+    left: 0
+    bottom: 0
+    +mt(.5s)
+    line-height: 1.3
+  &-hover
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: flex-start
+    flex-wrap: wrap
+    position: absolute
+    width: 100%
+    height: 100%
+    background-color: rgba($text, .75)
+    padding: 22px
+    +mt(.5s)
+    top: 100%
+  &-desc
+    width: 100%
+    line-height: 1.3
+    margin-bottom: 14px
+    color: #fff
+  &-link
+    font-size: 17px
+    .svg
+      fill: #fff
+      width: 17px
+      height: auto
+      position: relative
+      margin-left: 8px
+      top: 2px
+  &:hover
+    .pop-item-content
+      bottom: 100%
+      opacity: .5
+    .pop-item-hover
+      top: 0
+  &.more
+    background-color: $accent-green
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    padding: 10px
+    border-radius: 5px
+    a
+      color: #fff
+      font-size: 21px
+      text-align: center
+      line-height: 1.2
+      &:hover
+        text-decoration: underline
+    .svg
+      width: 70px
+      height: auto
+      fill: #fff
+      margin-bottom: 12px
+
+
