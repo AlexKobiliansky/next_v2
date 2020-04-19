@@ -20,6 +20,34 @@
 // ≥992px
 +media-breakpoint-down(md)
 
+  .service-popup-form
+    .middle
+      flex-wrap: wrap
+      .spec
+        width: 100%
+        margin-bottom: 20px
+      .desc
+        width: 100%
+    .bottom
+      flex-wrap: wrap
+      padding-right: 25px
+      &-left
+        width: 100%
+        border-right: none
+        padding-right: 0
+      &-title
+        text-align: center
+      &-right
+        width: 100%
+        text-align: center
+        &:before
+          display: none
+      .bottom-wrap
+        label
+          margin-bottom: 20px
+      .btn
+        width: calc(50% - 23px)
+
   .s-contacts
     .contacts-block
       position: relative
@@ -202,6 +230,63 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .service-popup-form
+    .top
+      padding: 15px
+      span
+        font-size: 16px
+      .title
+        font-size: 22px
+    .middle
+      padding: 15px
+    .spec
+      &-img
+        width: 160px
+      &-content
+        width: calc(100% - 160px)
+        padding-right: 0
+        padding-left: 10px
+        padding-top: 0
+      &-name
+        font-size: 18px
+      &-desc
+        font-size: 14px
+      &-consult
+        font-size: 18px
+      .span
+        font-size: 14px
+      &-tel
+        a
+          font-size: 16px
+      .mes-item
+        margin-right: 10px
+        img
+          width: 25px
+    .desc
+      padding: 15px 20px
+      &-title
+        font-size: 18px
+        line-height: 1.2
+      &-span
+        font-size: 16px
+      ul
+        font-size: 14px
+    .bottom
+      padding: 15px 20px
+      &-title
+        font-size: 20px
+      .bottom-wrap
+        flex-wrap: wrap
+        label
+          width: 100%
+          margin-bottom: 15px
+          span
+            font-size: 14px
+      .btn
+        padding-top: 14px
+        padding-bottom: 14px
+        width: 100%
 
   .s-contacts
     .contacts-block
@@ -459,6 +544,28 @@
 
 @media (max-width: 390px)
 
+  .service-popup-form, .consult-popup-form
+    .top
+      .title
+        font-size: 18px
+    .spec
+      &-desc
+        margin-bottom: 15px
+      &-img
+        width: 130px
+      &-content
+        width: calc(100% - 130px)
+      &-name
+        font-size: 16px
+      &-consult
+        font-size: 16px
+        margin-bottom: 10px
+      .span
+        margin-bottom: 3px
+      &-tel
+        margin-bottom: 10px
+      .mes-item
+        margin-right: 5px
 
   .s-contacts
     .contacts-block

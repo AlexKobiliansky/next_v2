@@ -160,6 +160,19 @@ $(document).ready(function(){
 
 
 
+
+
+    $('.gallery-slider').owlCarousel({
+        loop:true,
+        nav: true,
+        margin: 15,
+        items: 1,
+        autoHeight: true,
+        dots: false,
+        autoplay: true,
+        navText: ["", ""],
+    });
+
     $('.intro-slider').owlCarousel({
         loop:false,
         nav: false,
@@ -171,17 +184,6 @@ $(document).ready(function(){
         mouseDrag: false,
         touchDrag: false,
         autoplay: true,
-    });
-
-    $('.gallery-slider').owlCarousel({
-        loop:true,
-        nav: true,
-        margin: 15,
-        items: 1,
-        autoHeight: true,
-        dots: false,
-        autoplay: true,
-        navText: ["", ""],
     });
 
 
@@ -205,24 +207,49 @@ $(document).ready(function(){
 
     heightses();
 
+
+
     $('.gal-slide').photoswipe({
         showAnimationDuration: 0,
         hideAnimationDuration: 0
     });
 
+    /** START FORMS */
+    $(function() {
+        $(".open-popup").magnificPopup({
+            type: "inline",
+            fixedContentPos: true,
+            fixedBgPos: false,
+            overflowY: "auto",
+            preloader: !1,
+            midClick: !0,
+            removalDelay: 300,
+            mainClass: "my-mfp-zoom-in",
+        })
+    });
+
     //E-mail Ajax Send
     $("form").submit(function() { //Change
         var th = $(this);
+        var t = th.find(".btn").text();
+        th.find(".btn").prop("disabled", "disabled").addClass("disabled").text("Отправлено!");
 
         $.ajax({
             type: "POST",
-            url: "mail.php", //Change
+            url: "/mail.php", //Change
             data: th.serialize()
         }).done(function() {
-
+            setTimeout(function() {
+                th.find(".btn").removeAttr('disabled').removeClass("disabled").text(t);
+                th.trigger("reset");
+                $.magnificPopup.close();
+            }, 2000);
         });
         return false;
     });
+    /** END FORMS */
+
+    $('.preloader').fadeOut();
 
     /** START MAPS */
     function loadScript(url, callback){

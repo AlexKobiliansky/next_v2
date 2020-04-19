@@ -27,6 +27,16 @@
 </head>
 
 <body>
+<!-- preloader start -->
+<div class="preloader">
+	<div class="sk-folding-cube">
+		<div class="sk-cube sk-cube-1"></div>
+		<div class="sk-cube sk-cube-2"></div>
+		<div class="sk-cube sk-cube-4"></div>
+		<div class="sk-cube sk-cube-3"></div>
+	</div>
+</div>
+<!-- preloader end -->
 <div id="page-container">
 	<!-- mobile-mnu -->
 	<nav id="mobile-mnu" data-logo="img/logo-dark.png">
@@ -359,7 +369,7 @@
 								</div>
 								<div class="pop-item-hover">
 									<div class="pop-item-desc">Переоборудование по ДОПОГ (Дорожная перевозка опасных грузов)</div>
-									<a href="#0" class="pop-item-link btn btn-green">Узнать стоимость <img src="img/icons/arrow.svg" alt="alt" class="svg"></a>
+									<a href="#service-popup-form" class="pop-item-link btn btn-green open-popup">Узнать стоимость <img src="img/icons/arrow.svg" alt="alt" class="svg"></a>
 								</div>
 							</div>
 							<!-- /pop-item -->
@@ -915,6 +925,96 @@
 	<!-- ======= FOOTER END ======= -->
 </div>
 
+
+
+
+<div class="hidden">
+	<form class="popup-form service-popup-form contact-form" id="service-popup-form">
+		<!-- Hidden Required Fields -->
+		<input type="hidden" name="project_name" value="НЕКСТ">
+		<input type="hidden" name="admin_email" value="alexey.kobilianskiy@gmail.com">
+		<input type="hidden" name="form_subject" value="Заявка с сайта НЕКСТ">
+		<!-- END Hidden Required Fields -->
+		<input type="hidden" name="Форма" value="Заявка на услугу">
+		<input type="hidden" name="Название услуги" value="Регистрация фаркопа">
+
+
+		<div class="top">
+			<span>Наименование услуги</span>
+			<div class="title">Регистрация фаркопа</div>
+		</div>
+		<div class="middle">
+			<div class="spec">
+				<div class="spec-img">
+					<img src="img/spec-img.jpg" alt="alt">
+				</div>
+				<div class="spec-content">
+					<div class="spec-name">Иван Сидоров</div>
+					<div class="spec-desc">специалист по переоборудованию <br>стаж в работе: 8 лет </div>
+					<div class="spec-consult">Проконсультирует вас</div>
+					<div class="spec-tel">
+						<span class="span">по тел.:</span>
+						<a href="tel:89315010220">8 931 501 02 20</a>
+					</div>
+					<div class="spec-messangers">
+						<span class="span">или через мессенджеры:</span>
+						<div class="mes-wrap">
+							<!-- mes-item -->
+							<a href="viber://chat?number=+380636222029" class="mes-item">
+								<img src="img/icons/mes-icon-1.png" alt="alt" class="img-responsive">
+							</a>
+							<!-- /mes-item -->
+
+							<!-- mes-item -->
+							<a href="https://telegram.im/@alex_kobilianskiy" class="mes-item">
+								<img src="img/icons/mes-icon-2.png" alt="alt" class="img-responsive">
+							</a>
+							<!-- /mes-item -->
+
+							<!-- mes-item -->
+							<a href="https://wa.me/380636222029" class="mes-item">
+								<img src="img/icons/mes-icon-3.png" alt="alt" class="img-responsive">
+							</a>
+							<!-- /mes-item -->
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="desc">
+				<div class="desc-title">Бесплатная техническая экспертиза законности изменений</div>
+				<div class="desc-span">Вам расскажут:</div>
+				<ul>
+					<li>Точные сроки регистрации;</li>
+					<li>Этапы и нюансы взаимодействия с ГИБДД;</li>
+					<li>Стоимость оформления документов;</li>
+					<li>Особенности регистрации этого вида изменений</li>
+				</ul>
+			</div>
+		</div>
+		<div class="bottom">
+			<div class="bottom-left">
+				<div class="bottom-title">Оставить заявку на переоборудование</div>
+				<div class="bottom-wrap">
+					<label>
+						<span>Ваше имя</span>
+						<input type="text" placeholder="Андрей" name="Имя" autocomplete="off" data-validation="custom"
+							   data-validation-regexp="^[a-zA-Zа-яА-Я ]{1,50}$">
+					</label>
+
+					<label>
+						<span>Ваш номер телефона</span>
+						<input type="text" class="user-phone" name="Телефон" placeholder="8 999 666 33 22"
+							   autocomplete="off" data-validation="custom"
+							   data-validation-regexp="[0-9]{1}\s[0-9]{3}\s[0-9]{3}\s[0-9]{2}\s[0-9]{2}">
+					</label>
+				</div>
+			</div>
+			<div class="bottom-right">
+				<button type="submit" class="btn btn-red">Оставить заявку</button>
+			</div>
+		</div>
+	</form>
+</div>
 
 
 <!-- ======= HTML FOR PHOTOSWIPE ======= -->

@@ -143,3 +143,274 @@ form
   margin-bottom: 35px
 
 
+//MY_MFP_ZOOM_IN
+.my-mfp-zoom-in
+  .zoom-anim-dialog, .popup-form
+    opacity: 0
+    transition: all 0.5s ease-in-out
+    transform: scale(0.7)
+  &.mfp-ready .zoom-anim-dialog, &.mfp-ready .popup-form
+    opacity: 1
+    transform: scale(1)
+  &.mfp-removing .zoom-anim-dialog, &.mfp-removing .popup-form
+    transform: scale(0.7)
+    opacity: 0
+  &.mfp-bg
+    opacity: 0
+    transition: opacity 0.5s ease-out
+  &.mfp-ready.mfp-bg
+    opacity: .9
+  &.mfp-removing.mfp-bg
+    opacity: 0
+
+.mfp-close-btn-in .mfp-close
+  color: #fff
+
+.service-popup-form
+  display: block
+  position: relative
+  margin-left: auto
+  margin-right: auto
+  max-width: 945px
+  border-radius: 5px
+  overflow: hidden
+  .top
+    background-color: $accent-green
+    line-height: 1
+    padding: 20px 25px 25px
+    span
+      font-size: 18px
+      color: rgba($text, .6)
+      margin-bottom: 5px
+      display: inline-block
+    .title
+      font-size: 30px
+      font-weight: 700
+      color: #fff
+  .middle
+    padding: 14px 0 24px 25px
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+    background-color: #fff
+  .spec
+    width: 511px
+    display: flex
+    &-img
+      width: 195px
+      border-radius: 5px
+      overflow: hidden
+      img
+        width: 100%
+        object-fit: cover
+        height: 100%
+    &-content
+      width: calc(100% - 195px)
+      padding: 8px 20px 0 25px
+    &-name
+      line-height: 1
+      font-size: 21px
+      font-weight: 700
+      margin-bottom: 5px
+    &-desc
+      font-size: 18px
+      color: rgba(#000, .8)
+      line-height: 1.2
+      margin-bottom: 20px
+    &-consult
+      line-height: 1
+      font-size: 24px
+      font-weight: 700
+      margin-bottom: 15px
+    .span
+      font-size: 18px
+      line-height: 1
+      color: #6a6a6a
+      display: block
+      margin-bottom: 5px
+    &-tel
+      font-size: 22px
+      line-height: 1
+      margin-bottom: 15px
+      a
+        color: $text
+        font-weight: 700
+        display: inline-block
+        &:hover
+          color: $accent-green
+    &-messangers
+      .span
+      margin-bottom: 10px
+    .mes-wrap
+      font-size: 0
+    .mes-item
+      display: inline-block
+      margin-right: 14px
+      img
+        width: 50px
+        height: auto
+      &:last-child
+        margin-right: 0
+      &:hover
+        filter: brightness(1.1)
+  .desc
+    width: calc(100% - 511px)
+    background-color: #f5f5f5
+    border-top-left-radius: 5px
+    border-bottom-left-radius: 5px
+    padding: 10px 20px 10px 33px
+    &-title
+      font-size: 21px
+      font-weight: 700
+      color: $accent-green
+      line-height: 1.5
+      margin-bottom: 10px
+    &-span
+      font-size: 18px
+      color: #6a6a6a
+      margin-bottom: 7px
+    ul
+      line-height: 1
+      font-size: 18px
+      li
+        position: relative
+        margin-bottom: 15px
+        padding-left: 12px
+        &:before
+          content: ''
+          position: absolute
+          width: 5px
+          height: 5px
+          border-radius: 50%
+          background-color: #000
+          left: 0
+          top: 7px
+  .bottom
+    background-color: #f5f5f5
+    padding: 20px 40px 30px 25px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    &-left
+      width: 547px
+      border-right: 2px solid #d7d7d7
+      padding-right: 47px
+    &-title
+      line-height: 1.2
+      font-size: 24px
+      font-weight: 700
+      margin-bottom: 15px
+    .bottom-wrap
+      display: flex
+      justify-content: space-between
+      align-items: flex-end
+      label
+        width: calc(50% - 23px)
+        margin-bottom: 0
+        span
+          font-size: 18px
+    &-right
+      width: calc(100% - 547px)
+      text-align: right
+      position: relative
+      &:before
+        content: ''
+        position: absolute
+        width: 18px
+        height: 18px
+        +bg-cover
+        background-image: url('../img/icons/popup-arrow.svg')
+        left: 23px
+        top: calc(50% - 9px)
+      .btn
+        width: 260px
+
+
+//preloader
+.preloader
+  position: fixed
+  top: 0
+  right: 0
+  bottom: 0
+  left: 0
+  width: 100%
+  height: 100%
+  z-index: 10000
+  display: flex
+  justify-content: center
+  align-items: center
+  background-color: #ebeef8
+
+.sk-folding-cube
+  width: 4em
+  height: 4em
+  position: relative
+  margin: auto
+  transform: rotateZ(45deg)
+
+.sk-folding-cube .sk-cube
+  float: left
+  width: 50%
+  height: 50%
+  position: relative
+  transform: scale(1.1)
+
+.sk-folding-cube .sk-cube:before
+  content: ''
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  background-color: $accent-green
+  animation: sk-folding-cube-angle 2.4s infinite linear both
+  transform-origin: 100% 100%
+
+.sk-folding-cube .sk-cube-2
+  transform: scale(1.1) rotateZ(90deg)
+
+.sk-folding-cube .sk-cube-3
+  transform: scale(1.1) rotateZ(180deg)
+
+.sk-folding-cube .sk-cube-4
+  transform: scale(1.1) rotateZ(270deg)
+
+.sk-folding-cube .sk-cube-2:before
+  animation-delay: 0.3s
+
+.sk-folding-cube .sk-cube-3:before
+  animation-delay: 0.6s
+
+.sk-folding-cube .sk-cube-4:before
+  animation-delay: 0.9s
+
+
+@-webkit-keyframes sk-folding-cube-angle
+  0%, 10%
+    transform: perspective(140px) rotateX(-180deg)
+    opacity: 0
+
+  25%, 75%
+    transform: perspective(140px) rotateX(0deg)
+    opacity: 1
+
+  90%, 100%
+    transform: perspective(140px) rotateY(180deg)
+    opacity: 0
+
+
+
+@keyframes sk-folding-cube-angle
+  0%, 10%
+    transform: perspective(140px) rotateX(-180deg)
+    opacity: 0
+
+  25%, 75%
+    transform: perspective(140px) rotateX(0deg)
+    opacity: 1
+
+  90%, 100%
+    transform: perspective(140px) rotateY(180deg)
+    opacity: 0
+
+
