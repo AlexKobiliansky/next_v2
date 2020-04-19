@@ -11,6 +11,20 @@
 // ≥992px
 +media-breakpoint-down(md)
 
+
+  .s-count
+    .section-title
+      font-size: 28px
+
+  .count-spec
+    width: 250px
+    &-img
+      width: 160px
+      height: 160px
+
+  .count-content
+    width: calc(100% - 280px)
+
   .gal-slide
     width: calc(50% - 15px)
 
@@ -97,6 +111,12 @@
 // ≥768px
 +media-breakpoint-down(sm)
 
+  .count-spec
+    display: none
+
+  .count-content
+    width: 100%
+
   .prices-wrap
     justify-content: center
 
@@ -147,6 +167,19 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .s-count
+    padding: 50px 0
+    .section-title
+      font-size: 24px
+
+  .count-form
+    width: 100%
+    .btn
+      width: 100%
+    label
+      span
+        font-size: 16px
 
   .s-text
     padding: 40px 10px
@@ -371,6 +404,16 @@
       font-size: 24px
 
 @media (max-width: 390px)
+
+  .s-count
+    .section-title
+      font-size: 20px
+
+  .count-form
+    .btn
+      padding-left: 15px
+      padding-right: 15px
+      font-size: 18px
 
   .s-text
     h3
