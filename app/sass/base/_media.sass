@@ -20,6 +20,10 @@
 // ≥992px
 +media-breakpoint-down(md)
 
+  .service-form
+    .btn
+      margin-top: 10px
+
   .services-desktop-wrap
     justify-content: space-between
 
@@ -215,6 +219,11 @@
 // ≥768px
 +media-breakpoint-down(sm)
 
+  .s-service-form
+    background-image: none
+    background-color: rgba(#000, .08)
+    padding: 30px
+
   .feature-item
     padding: 0 15px
     width: 33.333333%
@@ -300,6 +309,10 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .s-service-form
+    padding-left: 15px
+    padding-right: 15px
 
   .services-slider
     box-shadow: 0 0 10px 5px rgba(#000, .1)
@@ -711,6 +724,19 @@
       font-size: 24px
 
 @media (max-width: 390px)
+
+  .s-service-form
+    .section-title
+      text-align: center
+    .section-subtitle
+      text-align: center
+    .short-label
+      width: 100%
+    .btn
+      width: 100%
+      font-size: 16px
+      margin-top: 0
+
 
   .service-item
     &-title
