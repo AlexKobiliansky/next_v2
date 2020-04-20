@@ -1,0 +1,49 @@
+.s-docs
+  +boxshadow
+  border-radius: 5px
+  padding: 35px 30px 30px
+  position: relative
+  overflow: hidden
+  .section-title
+    font-size: 21px
+    line-height: 1
+    margin-bottom: 40px
+  &:before
+    content: '1'
+    position: absolute
+    left: 30px
+    top: -26px
+    text-align: center
+    font-size: 134px
+    font-weight: 700
+    color: rgba($accent-green, .3)
+    line-height: 1
+  &.docs-second
+    margin-bottom: 20px
+    &:before
+      content: '2'
+  &.docs-third
+    &:before
+      content: '3'
+
+
+.docs-wrap
+  display: flex
+  justify-content: space-between
+
+.doc-item
+  width: calc(25% - 15px)
+  &-img
+    height: 186px
+    +bg-cover
+    border-radius: 5px
+    margin-bottom: 12px
+  &-title
+    font-size: 18px
+    line-height: 1.2
+    margin-bottom: 12px
+    font-weight: 700
+    display: flex
+    align-items: center
+  &-desc
+    line-height: 1.4

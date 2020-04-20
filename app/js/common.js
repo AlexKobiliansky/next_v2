@@ -192,6 +192,7 @@ $(document).ready(function(){
             $('.adv-item-title').height('auto').equalHeights();
             $('.gal-slide-title').height('auto').equalHeights();
             $('.gal-slide-desc').height('auto').equalHeights();
+            $('.doc-item-title').height('auto').equalHeights();
         }
 
         if ($(window).width()>768) {
@@ -199,6 +200,8 @@ $(document).ready(function(){
             $('.price-item-desc').height('auto').equalHeights();
             $('.price-item-include').height('auto').equalHeights();
         }
+
+
     }
 
     $(window).resize(function() {

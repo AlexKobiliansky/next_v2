@@ -1,0 +1,32 @@
+.s-page-meta
+  padding-top: 35px
+  padding-bottom: 35px
+
+.breadcrumbs
+  line-height: 1
+  font-size: 15px
+  margin-bottom: 20px
+  a
+    color: rgba($text, .5)
+    position: relative
+    &:after
+      content: ' / '
+      color: rgba($text, .5)
+    &:hover
+      color: $accent-green
+    &:last-child
+      pointer-events: none
+      &:after
+        display: none
+
+.page-title
+  font-family: "BebasNeueBold", sans-serif
+  font-size: 61px
+  line-height: 1.1
+
+.page-desc
+  font-size: 18px
+  line-height: 1.5
+  font-weight: normal
+  color: rgba($text, .72)
+
