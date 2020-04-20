@@ -24,6 +24,44 @@
 // ≥992px
 +media-breakpoint-down(md)
 
+  .package-item
+    &-title
+      font-size: 24px
+      padding-right: 15px
+    &-link
+      font-size: 16px
+    &-desc
+      font-size: 16px
+    &-formline
+      flex-direction: column
+    &-price
+      margin-right: 0
+      margin-bottom: 15px
+
+  .package-form
+    width: 450px
+    padding-right: 0
+    .form-labels-wrap
+      display: flex
+      flex-direction: row
+      justify-content: space-between
+      align-items: flex-end
+      margin-bottom: 10px
+      label
+        margin-bottom: 0
+      label, .btn
+        width: calc(50% - 10px)
+
+  .package-head-price
+    padding-right: 15px
+    width: calc(100% - 340px - 110px)
+    .price
+      font-size: 18px
+
+  .package-spec-content
+    font-size: 16px
+
+
   .number-item
     padding: 0 30px
 
@@ -264,6 +302,29 @@
 // ≥768px
 +media-breakpoint-down(sm)
 
+  .package-item
+    &-formline
+      .formline-left
+        width: 100%
+
+  .package-form
+    width: 100%
+
+  .package-gal-img
+    height: 180px
+
+  .package-spec-content
+    font-size: 14px
+
+  .package-item
+    &-desc
+      font-size: 14px
+    &-title
+      width: calc(100% - 110px)
+
+  .package-head-price
+    display: none
+
   .portfolio-item
     width: 100%
 
@@ -392,13 +453,91 @@
 // ≥480px
 +media-breakpoint-down(xs)
 
-  .s-portfolio
-    padding-left: 0
-    padding-right: 0
-    .btn-wrap
-      .btn
+  .package-item
+    &-title
+      font-size: 20px
+      width: calc(100% - 85px)
+    &-desc
+      font-size: 12px
+    &-body
+      padding-top: 25px
+    &-include
+      span
         font-size: 18px
-        width: 240px
+        margin-bottom: 12px
+      ul
+        font-size: 16px
+        margin-bottom: 30px
+        li
+          padding-left: 30px
+          margin-bottom: 12px
+          &:before
+            width: 20px
+            height: 20px
+            top: -1px
+    &-price
+      .price
+        font-size: 18px
+        margin-bottom: 3px
+      .notice
+        font-size: 14px
+    &-formline
+      padding-bottom: 30px
+
+  .package-spec
+    flex-direction: column
+    padding-bottom: 30px
+    &-info
+      width: 100%
+      margin-bottom: 20px
+    &-content
+      width: 100%
+      font-size: 14px
+      text-align: center
+      line-height: 1.4
+
+  .package-gallery-title
+    line-height: 1.2
+
+  .package-gal
+    margin-bottom: 30px
+    &-img
+      height: 240px
+    &-price
+      margin-bottom: 5px
+
+  .package-form
+    .form-labels-wrap
+      flex-wrap: wrap
+      margin-bottom: 5px
+      label
+        width: 100%
+        margin-bottom: 15px
+      .btn
+        width: 100%
+        font-size: 16px
+    .form-notice
+      line-height: 1.2
+
+  .package-item
+    &-title
+      font-size: 20px
+    &-link
+      font-size: 14px
+      top: calc(50% - 8px)
+      padding-right: 18px
+      &:after
+        width: 10px
+        height: 10px
+        top: calc(50% - 3px)
+
+  .s-portfolio
+      padding-left: 0
+      padding-right: 0
+      .btn-wrap
+        .btn
+          font-size: 18px
+          width: 240px
 
 
   .portfolio-slide
@@ -867,6 +1006,13 @@
       font-size: 24px
 
 @media (max-width: 390px)
+
+  .package-item
+    &-title
+      font-size: 18px
+    &-head
+      padding-left: 10px
+      padding-right: 10px
 
   .portfolio-slide
     height: 240px
