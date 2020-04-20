@@ -24,6 +24,12 @@
 // ≥992px
 +media-breakpoint-down(md)
 
+  .term-item
+    &-desc
+      font-size: 16px
+    &-title
+      font-size: 16px
+
   .package-item
     &-title
       font-size: 24px
@@ -302,6 +308,12 @@
 // ≥768px
 +media-breakpoint-down(sm)
 
+  .s-terms .col-12:last-child .term-item
+    margin-bottom: 0
+
+  .term-item
+    margin-bottom: 30px
+
   .package-item
     &-formline
       .formline-left
@@ -452,6 +464,9 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .s-terms
+    padding-top: 20px
 
   .package-item
     &-title

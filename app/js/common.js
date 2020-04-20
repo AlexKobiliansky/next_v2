@@ -220,6 +220,7 @@ $(document).ready(function(){
             $('.gal-slide-desc').height('auto').equalHeights();
             $('.doc-item-title').height('auto').equalHeights();
             $('.service-item-title').height('auto').equalHeights();
+            $('.term-item-title').height('auto').equalHeights();
         }
 
         if ($(window).width()>768) {
