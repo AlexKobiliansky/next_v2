@@ -6,6 +6,10 @@
 // ≥1200px
 +media-breakpoint-down(lg)
 
+  .step-item
+    &:before
+      left: 50px
+
   .main-foot
     padding: 40px 0
 
@@ -19,6 +23,16 @@
 
 // ≥992px
 +media-breakpoint-down(md)
+
+  .step-item
+    margin-bottom: 40px
+    &:before
+      left: 30px
+      font-size: 110px
+    .svg
+      width: 75px
+    &-title
+      font-size: 18px
 
   .service-form
     .btn
@@ -219,6 +233,15 @@
 // ≥768px
 +media-breakpoint-down(sm)
 
+  .steps-wrap
+    justify-content: space-between
+
+  .step-item
+    width: calc(50% - 15px)
+    margin-right: 0
+    &:before
+      left: 40px
+
   .s-service-form
     background-image: none
     background-color: rgba(#000, .08)
@@ -309,6 +332,26 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+
+
+  .s-steps.s-text
+    padding-left: 0
+    padding-right: 0
+    padding-top: 50px
+
+  .step-item
+    margin-bottom: 35px
+    &-img
+      margin-bottom: 10px
+    .svg
+      width: 60px
+    &-title
+      font-size: 16px
+    &:before
+      font-size: 85px
+      left: 19%
+      top: -13px
 
   .s-service-form
     padding-left: 15px
@@ -724,6 +767,10 @@
       font-size: 24px
 
 @media (max-width: 390px)
+
+  .step-item
+    &:before
+      left: 10%
 
   .s-service-form
     .section-title
