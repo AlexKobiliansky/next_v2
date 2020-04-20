@@ -197,6 +197,21 @@ $(document).ready(function(){
         autoHeight: true
     });
 
+    $('.portfolio-slider').owlCarousel({
+        loop:false,
+        nav:true,
+        autoHeight: true,
+        items: 1,
+        thumbs: true,
+        dots: false,
+        thumbsPrerendered: true,
+        thumbItemClass: 'portfolio-nav',
+        animateIn: "fadeIn",
+        animateOut: "fadeOut",
+        mouseDrag: false,
+        navText: ['', '']
+    });
+
 
     function heightses() {
         if ($(window).width()>480) {

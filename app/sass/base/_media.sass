@@ -24,6 +24,25 @@
 // ≥992px
 +media-breakpoint-down(md)
 
+  .number-item
+    padding: 0 30px
+
+  .simple-form.dark-form
+    padding-left: 30px
+    padding-right: 30px
+    .form-labels-wrap
+      padding-left: 0
+      padding-right: 0
+    h3
+      font-size: 22px
+      margin-bottom: 30px
+    .btn
+      font-size: 16px
+      width: 240px
+      margin-left: 0
+    label
+      width: calc((100% - 50px - 240px)/2)
+
   .simple-form
     .btn
       margin-left: 0
@@ -245,6 +264,21 @@
 // ≥768px
 +media-breakpoint-down(sm)
 
+  .portfolio-item
+    width: 100%
+
+  .portfolio-slide
+    height: 340px
+
+  .portfolio-nav
+    height: 100px
+
+  .number-item
+    &-number
+      font-size: 70px
+    &-title
+      font-size: 14px
+
   .s-simple-form.light-simple-form .section-title
     font-size: 24px
 
@@ -357,6 +391,46 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .s-portfolio
+    padding-left: 0
+    padding-right: 0
+    .btn-wrap
+      .btn
+        font-size: 18px
+        width: 240px
+
+
+  .portfolio-slide
+    height: 260px
+
+  .portfolio-nav
+    height: 70px
+
+  .numbers
+    flex-wrap: wrap
+    position: relative
+
+  .number-item
+    width: 100%
+    margin-bottom: 20px
+    padding: 0
+    &-number
+      font-size: 90px
+    &-title
+      font-size: 16px
+    &:last-child
+      margin-bottom: 0
+
+  .simple-form.dark-form
+    padding-left: 10px
+    padding-right: 10px
+    padding-bottom: 50px
+    .section-title
+      margin-bottom: 10px
+    h3
+      font-size: 18px
+      margin-bottom: 20px
 
   .simple-form
     padding: 25px 15px 40px
@@ -793,6 +867,12 @@
       font-size: 24px
 
 @media (max-width: 390px)
+
+  .portfolio-slide
+    height: 240px
+
+  .portfolio-nav
+    height: 60px
 
   .s-simple-form.light-simple-form .section-title
     font-size: 18px
