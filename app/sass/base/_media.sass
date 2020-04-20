@@ -24,6 +24,15 @@
 // ≥992px
 +media-breakpoint-down(md)
 
+  .s-stages
+    padding-top: 40px
+
+  .stage-item
+    &-title
+      font-size: 20px
+    &-desc
+      font-size: 16px
+
   .term-item
     &-desc
       font-size: 16px
@@ -464,6 +473,9 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .stage-item
+    margin-bottom: 30px
 
   .s-terms
     padding-top: 20px
@@ -1021,6 +1033,14 @@
       font-size: 24px
 
 @media (max-width: 390px)
+
+  .stage-item
+    &-img
+      height: 180px
+      &:after
+        left: -3px
+        bottom: -10px
+        font-size: 90px
 
   .package-item
     &-title

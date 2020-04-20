@@ -227,6 +227,7 @@ $(document).ready(function(){
             $('.price-item-title').height('auto').equalHeights();
             $('.price-item-desc').height('auto').equalHeights();
             $('.price-item-include').height('auto').equalHeights();
+            $('.stage-item-title').height('auto').equalHeights();
         }
 
 
