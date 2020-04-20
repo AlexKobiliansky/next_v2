@@ -24,6 +24,13 @@
 // ≥992px
 +media-breakpoint-down(md)
 
+  .s-register-form
+    background-color: #f3f3f4
+
+  .register-form-img-wrap
+    display: none
+
+
   .s-stages
     padding-top: 40px
 
@@ -317,6 +324,19 @@
 // ≥768px
 +media-breakpoint-down(sm)
 
+  .register-form
+    h2
+      text-align: center
+    h3
+      text-align: center
+      font-size: 18px
+    .form-labels-wrap
+      padding-right: 0
+    label
+      width: calc(50% - 15px)
+    .btn
+      width: calc(50% - 15px)
+
   .s-terms .col-12:last-child .term-item
     margin-bottom: 0
 
@@ -473,6 +493,19 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .register-form
+    h2
+      font-size: 22px
+    h3
+      font-size: 16px
+      margin-bottom: 20px
+    .form-labels-wrap
+      flex-wrap: wrap
+    label, .btn
+      width: 100%
+      span
+        font-size: 16px
 
   .stage-item
     margin-bottom: 30px
@@ -1033,6 +1066,14 @@
       font-size: 24px
 
 @media (max-width: 390px)
+
+  .register-form
+    h2
+      font-size: 18px
+    label
+      margin-bottom: 15px
+    .btn
+      font-size: 16px
 
   .stage-item
     &-img
