@@ -1,0 +1,49 @@
+.s-simple-form
+  background-image: url('../img/bg-count.jpg')
+  position: relative
+  color: #fff
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    background-color: rgba(#000, .85)
+  .container
+    position: relative
+    z-index: 2
+  &.light-simple-form
+    background-image: none
+    color: $text
+    background-color: #fff
+    +boxshadow
+    border-radius: 5px
+    margin-bottom: 60px
+    &:before
+      display: none
+    .section-title
+      font-size: 47px
+
+.simple-form
+  padding: 25px 40px 50px
+  .section-title
+    line-height: 1.2
+    margin-bottom: 0
+  h3
+    font-size: 29px
+    color: rgba(#fff, .45)
+    font-weight: normal
+    text-align: center
+    margin-bottom: 45px
+    line-height: 1.2
+  .form-labels-wrap
+    display: flex
+    justify-content: space-between
+    align-items: flex-end
+  label
+    margin-bottom: 0
+    width: calc((100% - 50px - 30px - 228px)/2)
+  .btn
+    width: 228px
+    margin-left: 30px
