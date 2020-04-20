@@ -20,6 +20,14 @@
 // ≥992px
 +media-breakpoint-down(md)
 
+  .services-desktop-wrap
+    justify-content: space-between
+
+  .service-item
+    width: calc(50% - 15px)
+    margin-bottom: 30px
+    margin-right: 0
+
   .feature-item
     display: block
     text-align: center
@@ -292,6 +300,42 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .services-slider
+    box-shadow: 0 0 10px 5px rgba(#000, .1)
+    .owl-nav
+      position: absolute
+      z-index: 2
+      top: calc(50% - 9.5px)
+      left: 0
+      width: 100%
+      button.owl-prev, button.owl-next
+        width: 19px
+        height: 19px
+        background-image: url('../img/icons/slider-arrow.svg')
+        +bg-cover
+        cursor: pointer
+        +mt(.3s)
+        position: absolute
+      button.owl-prev
+        left: -30px
+        transform: rotate(180deg)
+      button.owl-next
+        right: -30px
+
+  .service-item
+    box-shadow: none
+    margin-bottom: 0
+    width: 100%
+    &-title
+      font-size: 18px
+    &-order
+      width: 120px
+    &-img
+      height: 220px
+
+  .services-mobile-wrap
+    padding: 0 50px
 
   .s-features
     padding-bottom: 20px
@@ -667,6 +711,15 @@
       font-size: 24px
 
 @media (max-width: 390px)
+
+  .service-item
+    &-title
+      font-size: 16px
+    &-img
+      height: 180px
+
+  .services-mobile-wrap
+    padding: 0 20px
 
   .p-contacts-form
     padding: 25px 10px

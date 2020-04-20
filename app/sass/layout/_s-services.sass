@@ -1,0 +1,62 @@
+.s-services
+  margin-bottom: 40px
+
+.services-desktop-wrap
+  display: flex
+  justify-content: flex-start
+  align-items: flex-start
+  flex-wrap: wrap
+
+.service-item
+  border-radius: 5px
+  overflow: hidden
+  box-shadow: 0 0 15px 10px rgba(#000, .08)
+  width: calc(33.33333% - 15px)
+  margin-bottom: 15px
+  margin-right: 22px
+  &:nth-child(3n)
+    margin-right: 0
+  &-img
+    background-color: #e5e5e5
+    height: 178px
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+  &-content
+    background-color: #fff
+    padding: 11px 0 0 13px
+  &-title
+    padding-right: 13px
+    line-height: 1.3
+    font-size: 18px
+    margin-bottom: 18px
+  &-bottom
+    display: flex
+    justify-content: space-between
+    align-items: flex-end
+  &-order
+    font-size: 16px
+    width: 130px
+    padding: 14px
+    border-radius: 0
+  &-time
+    font-size: 10px
+    color: #9c9c9c
+    position: relative
+    padding-left: 22px
+    margin-bottom: 3px
+    &:before
+      content: ''
+      position: absolute
+      width: 16px
+      height: 16px
+      +bg-cover
+      background-image: url('../img/icons/clock-icon-grey.svg')
+      left: 0
+      top: calc(50% - 8px)
+  &-price
+    font-size: 17px
+    font-weight: 700
+    color: $accent-green
+    margin-bottom: 3px

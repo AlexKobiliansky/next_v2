@@ -186,6 +186,17 @@ $(document).ready(function(){
         autoplay: true,
     });
 
+    $('.services-slider').owlCarousel({
+        items: 1,
+        loop:true,
+        nav: true,
+        margin: 15,
+        dots: false,
+        autoplay: true,
+        navText: ["", ""],
+        autoHeight: true
+    });
+
 
     function heightses() {
         if ($(window).width()>480) {
@@ -193,6 +204,7 @@ $(document).ready(function(){
             $('.gal-slide-title').height('auto').equalHeights();
             $('.gal-slide-desc').height('auto').equalHeights();
             $('.doc-item-title').height('auto').equalHeights();
+            $('.service-item-title').height('auto').equalHeights();
         }
 
         if ($(window).width()>768) {
