@@ -1,0 +1,33 @@
+.s-features
+  padding: 40px 0 0
+  +boxshadow
+  border-radius: 5px
+  position: relative
+  z-index: 2
+  margin-bottom: 20px
+
+.features-wrap
+  display: flex
+  justify-content: center
+  align-items: flex-start
+  flex-wrap: wrap
+
+
+.feature-item
+  width: 33.3333%
+  margin-bottom: 50px
+  display: flex
+  justify-content: space-between
+  align-items: center
+  padding: 0 30px
+  .svg
+    height: 66px
+    width: auto
+    fill: $accent-green
+    margin-right: 10px
+  &-title
+    font-size: 18px
+    line-height: 1.25
+    font-weight: 700
+  &:nth-child(4), &:nth-child(5)
+    margin-bottom: 40px
